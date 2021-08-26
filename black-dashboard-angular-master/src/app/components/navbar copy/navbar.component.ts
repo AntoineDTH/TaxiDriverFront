@@ -1,9 +1,8 @@
-import { Component, OnInit, ElementRef, OnDestroy } from "@angular/core";
+/* import { Component, OnInit, ElementRef, OnDestroy } from "@angular/core";
 import { ROUTES } from "../sidebar/sidebar.component";
 import { Location } from "@angular/common";
 import { Router } from "@angular/router";
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarModule } from "./navbar.module";
 
 @Component({
   selector: "app-navbar",
@@ -195,3 +194,5 @@ export class NavbarComponent implements OnInit, OnDestroy {
      window.removeEventListener("resize", this.updateColor);
   }
 }
+
+*/
