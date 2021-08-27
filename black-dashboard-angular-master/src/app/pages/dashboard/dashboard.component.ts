@@ -1,5 +1,7 @@
+import { HttpClient } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
 import Chart from 'chart.js';
+import { AppService } from "src/app/app.service";
 
 @Component({
   selector: "app-dashboard",
@@ -15,7 +17,11 @@ export class DashboardComponent implements OnInit {
   public clicked1: boolean = false;
   public clicked2: boolean = false;
 
-  constructor() {}
+  constructor(private appService : AppService, private httpClient:HttpClient) {}
+
+  authenticated(){
+    return this.appService.authenticated;
+  }
 
   ngOnInit() {
     var gradientChartOptionsConfigurationWithTooltipBlue: any = {

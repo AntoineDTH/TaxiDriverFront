@@ -3,12 +3,12 @@ import { Component, OnInit, ElementRef, OnDestroy } from "@angular/core";
 import { Location } from "@angular/common";
 import { Router } from "@angular/router";
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-/*import { NavbarModule } from "./navbar.module";*/
+/*import { NavbarModule } from "../navbar.module/ts";*/
 
 @Component({
   selector: "app-navbar",
   templateUrl: "./navbar-admin.component.html",
-  styleUrls: ["./navbar.component.css"]
+  styleUrls: ["./navbar-admin.component.css"]
 })
 export class NavbarAdminComponent implements OnInit, OnDestroy {
   private listTitles: any[];
