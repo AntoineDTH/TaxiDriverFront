@@ -15,6 +15,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 import { LoginComponent } from './login/login.component';
 import { Injectable } from "@angular/core";
+import { AdminComponent } from './admin/admin.component';
 
 @Injectable()
 export class XhrInterceptor implements HttpInterceptor{
@@ -37,7 +38,7 @@ export class XhrInterceptor implements HttpInterceptor{
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, LoginComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, LoginComponent, AdminComponent],
   providers: [
     {provide : HTTP_INTERCEPTORS,useClass:XhrInterceptor,multi:true}
   ],
