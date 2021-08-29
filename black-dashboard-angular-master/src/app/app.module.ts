@@ -8,6 +8,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppComponent } from "./app.component";
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { ClientLayoutComponent } from './layouts/client-layout/client-layout.component';
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
@@ -38,7 +39,7 @@ export class XhrInterceptor implements HttpInterceptor{
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, LoginComponent, AdminComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ClientLayoutComponent, LoginComponent, AdminComponent],
   providers: [
     {provide : HTTP_INTERCEPTORS,useClass:XhrInterceptor,multi:true}
   ],
