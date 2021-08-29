@@ -18,7 +18,7 @@
         <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="navigation">
             <ul class=" navbar-nav ml-auto">
                 <!--Bouton dropdown-->
-                <li [hidden]="autorAdmin()" class=" nav-item" ngbDropdown>
+                <li [hidden]="autorAdmin() || !authenticated()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
                         <div class=" notification d-none d-lg-block d-xl-block"></div>
                         <i class=" tim-icons icon-sound-wave"> </i>
@@ -50,7 +50,7 @@
                 </li>
 
                 <!--Bouton dropdown-->
-                <li [hidden]="!autorAdmin()" class=" nav-item" ngbDropdown>
+                <li [hidden]="!autorAdmin() || !authenticated()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
                         <div class=" notification d-none d-lg-block d-xl-block"></div>
                         <i class=" tim-icons icon-sound-wave"> </i>
@@ -67,7 +67,7 @@
                     </ul>
                 </li>
                 <!--Bouton dropdown-->
-                <li [hidden]="autorAdmin()" class=" nav-item" ngbDropdown>
+                <li [hidden]="autorAdmin() || !authenticated()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
                         <div class=" notification d-none d-lg-block d-xl-block"></div>
                         <i class=" tim-icons icon-sound-wave"> </i>

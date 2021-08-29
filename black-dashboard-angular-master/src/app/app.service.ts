@@ -5,6 +5,7 @@ import { Role } from './model/role';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AppService {
   authenticated = false;
   roles:Role[];
