@@ -18,7 +18,7 @@
         <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="navigation">
             <ul class=" navbar-nav ml-auto">
                 <!--Bouton dropdown-->
-                <li class=" nav-item" ngbDropdown>
+                <li [hidden]="autorAdmin()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
                         <div class=" notification d-none d-lg-block d-xl-block"></div>
                         <i class=" tim-icons icon-sound-wave"> </i>
@@ -48,9 +48,9 @@
 
                     </ul>
                 </li>
-               
+
                 <!--Bouton dropdown-->
-                <li class=" nav-item" ngbDropdown>
+                <li [hidden]="!autorAdmin()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
                         <div class=" notification d-none d-lg-block d-xl-block"></div>
                         <i class=" tim-icons icon-sound-wave"> </i>
@@ -62,12 +62,12 @@
                 Générer les statistiques
               </a>
                         </li>
-                            
+
 
                     </ul>
                 </li>
-                 <!--Bouton dropdown-->
-                 <li class=" nav-item" ngbDropdown>
+                <!--Bouton dropdown-->
+                <li [hidden]="autorAdmin()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
                         <div class=" notification d-none d-lg-block d-xl-block"></div>
                         <i class=" tim-icons icon-sound-wave"> </i>
@@ -97,15 +97,15 @@
 
                     </ul>
                 </li>
-                
+
                 <!-- Bouton rechercher-->
                 <li class=" search-bar input-group">
-                    
+
                     <button class=" btn btn-link" data-target="#searchModal" data-toggle="modal" (click)="open(content)" id="search-button">
             <i class=" tim-icons icon-zoom-split"> </i>
             <span class=" d-lg-none d-md-block"> Rechercher </span>
           </button>
-                </li>       
+                </li>
                 <!--Bouton Déconnexion-->
                 <li class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
