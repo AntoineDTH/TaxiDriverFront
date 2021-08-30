@@ -10,98 +10,93 @@
             </div>
             <a [hidden]="authenticated()" class=" navbar-brand" href="javascript:void(0)">BIENVENUE SUR TAXI DRIVER!</a>
             <a [hidden]="!autorAdmin() || !authenticated()" class=" navbar-brand" href="javascript:void(0)">ADMINISTRATEUR</a>
-            <a [hidden]="!autorClient() || !authenticated()" class=" navbar-brand" href="javascript:void(0)">CLIENT</a>
-            <a [hidden]="!autorChauffeur() || !authenticated()" class=" navbar-brand" href="javascript:void(0)">CHAUFFEUR</a>
-            <a [hidden]="!autorRespo() || !authenticated()" class=" navbar-brand" href="javascript:void(0)">RESPONSABLE D'AGENCE</a>
+            <a [hidden]="!autorClient() || !authenticated()" class=" navbar-brand" href="http://localhost:4200/#/home">CLIENT</a>
+            <a [hidden]="!autorChauffeur() || !authenticated() " class=" navbar-brand " href="javascript:void(0) ">CHAUFFEUR</a>
+            <a [hidden]="!autorRespo() || !authenticated() " class=" navbar-brand " href="javascript:void(0) ">RESPONSABLE D'AGENCE</a>
         </div>
-        <button aria-label="Toggle navigation" class=" navbar-toggler" (click)="collapse()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" id="navigation" type="button">
-      <span class=" navbar-toggler-bar navbar-kebab"> </span>
-      <span class=" navbar-toggler-bar navbar-kebab"> </span>
-      <span class=" navbar-toggler-bar navbar-kebab"> </span>
+        <button aria-label="Toggle navigation " class=" navbar-toggler " (click)="collapse() " [attr.aria-expanded]="!isCollapsed " aria-controls="collapseExample " id="navigation " type="button ">
+      <span class=" navbar-toggler-bar navbar-kebab "> </span>
+      <span class=" navbar-toggler-bar navbar-kebab "> </span>
+      <span class=" navbar-toggler-bar navbar-kebab "> </span>
     </button>
-        <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="navigation">
-            <ul class=" navbar-nav ml-auto">
+        <div class=" navbar-collapse " [ngbCollapse]="isCollapsed " id="navigation ">
+            <ul class=" navbar-nav ml-auto ">
 
                 <!--Liste des boutons de la navbar-->
 
 
-                <!--Bouton dropdown "Préparer mon trajet"-->
-                <li [hidden]="!autorClient() || !authenticated()" class=" nav-item" ngbDropdown>
-                    <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
-                        <!--<div class=" notification d-none d-lg-block d-xl-block"></div>-->
-                        <i class=" tim-icons icon-delivery-fast"> </i>
-                        <!--<p class=" d-lg-none">Notifications</p>-->
+                <!--Bouton dropdown "Préparer mon trajet "-->
+                <li [hidden]="!autorClient() || !authenticated() " class=" nav-item " ngbDropdown>
+                    <a class=" nav-link " data-toggle="dropdown " href="javascript:void(0) " ngbDropdownToggle>
+                        <!--<div class=" notification d-none d-lg-block d-xl-block "></div>-->
+                        <i class=" tim-icons icon-delivery-fast "> </i>
+                        <!--<p class=" d-lg-none ">Notifications</p>-->
                     </a>
-                    <ul class=" dropdown-menu-right dropdown-navbar" ngbDropdownMenu>
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                    <ul class=" dropdown-menu-right dropdown-navbar " ngbDropdownMenu>
+                        <li class=" nav-link ">
+                            <a class=" nav-item " href="javascript:void(0) " ngbDropdownItem>
                                 Consulter les offres
                             </a>
                         </li>
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                        <li class=" nav-link ">
+                            <a class=" nav-item " href="javascript:void(0) " ngbDropdownItem>
                 Consulter les agences
               </a>
                         </li>
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                        <li class=" nav-link ">
+                            <a class=" nav-item " href="javascript:void(0) " ngbDropdownItem>
                 Voir les meilleurs chauffeurs
               </a>
                         </li>
-                        
-
                     </ul>
                 </li>
 
-                <!--Bouton dropdown "Mes trajets"-->
-                <li [hidden]="!autorClient() || !authenticated()" class=" nav-item" ngbDropdown>
-                    <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
-                        <!--<div class=" notification d-none d-lg-block d-xl-block"></div>-->
-                        <i class=" tim-icons icon-cart"> </i>
-                        <!--<p class=" d-lg-none">Notifications</p>-->
+                <!--Bouton dropdown "Mes trajets "-->
+                <li [hidden]="!autorClient() || !authenticated() " class=" nav-item " ngbDropdown>
+                    <a class=" nav-link " data-toggle="dropdown " href="javascript:void(0) " ngbDropdownToggle>
+                        <!--<div class=" notification d-none d-lg-block d-xl-block "></div>-->
+                        <i class=" tim-icons icon-cart "> </i>
+                        <!--<p class=" d-lg-none ">Notifications</p>-->
                     </a>
-                    <ul class=" dropdown-menu-right dropdown-navbar" ngbDropdownMenu>
+                    <ul class=" dropdown-menu-right dropdown-navbar " ngbDropdownMenu>
 
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
-                                Consulter mes réservations
+                        <li class=" nav-link ">
+                            <a class=" nav-item " href="http://localhost:4200/#/reservations " ngbDropdownItem>
+                                Mes réservations
                             </a>
                         </li>
                     </ul>
-                    
-
                 </li>
 
-                <!--Bouton dropdown "Partager mon expérience"-->
-                <li [hidden]="!autorClient() || !authenticated()" class=" nav-item" ngbDropdown>
-                    <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
-                        <!--<div class=" notification d-none d-lg-block d-xl-block"></div>-->
-                        <i class=" tim-icons icon-shape-star"> </i>
-                        <!--<p class=" d-lg-none">Notifications</p>-->
+                <!--Bouton dropdown "Partager mon expérience "-->
+                <li [hidden]="!autorClient() || !authenticated() " class=" nav-item " ngbDropdown>
+                    <a class=" nav-link " data-toggle="dropdown " href="javascript:void(0) " ngbDropdownToggle>
+                        <!--<div class=" notification d-none d-lg-block d-xl-block "></div>-->
+                        <i class=" tim-icons icon-shape-star "> </i>
+                        <!--<p class=" d-lg-none ">Notifications</p>-->
                     </a>
-                    <ul class=" dropdown-menu-right dropdown-navbar" ngbDropdownMenu>
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                    <ul class=" dropdown-menu-right dropdown-navbar " ngbDropdownMenu>
+                        <li class=" nav-link ">
+                            <a class=" nav-item " href="javascript:void(0) " ngbDropdownItem>
                                 Evaluer mon trajet
                             </a>
                         </li>
-                    
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+
+                        <li class=" nav-link ">
+                            <a class=" nav-item " href="javascript:void(0) " ngbDropdownItem>
                                 Commenter une offre
                             </a>
                         </li>
-                    
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+
+                        <li class=" nav-link ">
+                            <a class=" nav-item " href="javascript:void(0) " ngbDropdownItem>
                                 Consulter mes anciens feedbacks
                             </a>
                         </li>
                     </ul>
-
                 </li>
 
-                <!--Bouton dropdown "Gérer l'agence"-->
+                <!--Bouton dropdown "Gérer l 'agence"-->
                 <li [hidden]="!autorRespo() || !authenticated()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
                         <!--<div class=" notification d-none d-lg-block d-xl-block"></div>-->
@@ -114,44 +109,43 @@
                                 Ajouter un chauffeur
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Ajouter un véhicule
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Consulter un véhicule
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Editer un véhicule
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Supprimer un véhicule
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Générer un rapport
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Consulter les statistiques
                             </a>
                         </li>
                     </ul>
-
                 </li>
 
                 <!--Bouton dropdown "Gérer les offres"-->
@@ -167,14 +161,13 @@
                                 Proposer des offres
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Partager des offres
                             </a>
                         </li>
                     </ul>
-
                 </li>
 
                 <!--Bouton dropdown "Gérer les clients"-->
@@ -190,20 +183,19 @@
                                 Valider une course
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Confirmer une réservation
                             </a>
                         </li>
-                    
+
                         <li class=" nav-link">
                             <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                                 Traiter une réclamation
                             </a>
                         </li>
                     </ul>
-
                 </li>
 
                 <!--Bouton dropdown "Consulter mon planning"-->
@@ -220,8 +212,8 @@
               </a>
                         </li>
                     </ul>
-
                 </li>
+
                 <!--Bouton dropdown "Consulter mes feedbacks"-->
                 <li [hidden]="!autorChauffeur() || !authenticated()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
@@ -235,10 +227,9 @@
                 Consulter mes feedbacks
               </a>
                         </li>
-
-
                     </ul>
                 </li>
+
                 <!--Bouton dropdown "Gérer les comptes"-->
                 <li [hidden]="!autorAdmin() || !authenticated()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
@@ -267,7 +258,6 @@
                 Supprimer un compte
               </a>
                         </li>
-
                     </ul>
                 </li>
 
@@ -284,10 +274,9 @@
                 Générer les statistiques
               </a>
                         </li>
-
-
                     </ul>
                 </li>
+
                 <!--Bouton dropdown "Gérer les commentaires"-->
                 <li [hidden]="!autorAdmin() || !authenticated()" class=" nav-item" ngbDropdown>
                     <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
@@ -316,7 +305,6 @@
                 Supprimer un commentaire
               </a>
                         </li>
-
                     </ul>
                 </li>
 
@@ -342,46 +330,47 @@
                             <a class=" nav-item" href="http://localhost:4200/#/compte" ngbDropdownItem>
                 Créer mon compte
               </a>
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="http://localhost:4200/#/login" ngbDropdownItem>
+                            <li class=" nav-link">
+                                <a class=" nav-item" href="http://localhost:4200/#/login" ngbDropdownItem>
                 Me connecter
               </a>
-                        </li>
+                            </li>
                     </ul>
-                </li>
-                <li class=" separator d-lg-none"></li>
-                <!--Bouton Déconnexion-->
-                <li [hidden]="!authenticated()"class=" nav-item" ngbDropdown>
-                    <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
-                        <div class=" photo">
-                            <img [hidden]="!autorClient()" alt="Profile Photo" src="assets/img/anime4.png" />
-                            <img [hidden]="!autorChauffeur()" alt="Profile Photo" src="assets/img/anime5.jpg" />
-                            <img [hidden]="!autorRespo()" alt="Profile Photo" src="assets/img/anime7.png" />
-                            <img [hidden]="!autorAdmin()" alt="Profile Photo" src="assets/img/anime666.png" />
-                        </div>
-                        <b class=" caret d-none d-lg-block d-xl-block"> </b>
-                        <p class=" d-lg-none">Déconnexion</p>
-                    </a>
-                    <ul class=" dropdown-navbar" ngbDropdownMenu>
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                    </li>
+                    <li class=" separator d-lg-none"></li>
+
+                    <!--Bouton Déconnexion-->
+                    <li [hidden]="!authenticated()" class=" nav-item" ngbDropdown>
+                        <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
+                            <div class=" photo">
+                                <img [hidden]="!autorClient()" alt="Profile Photo" src="assets/img/anime4.png" />
+                                <img [hidden]="!autorChauffeur()" alt="Profile Photo" src="assets/img/anime5.jpg" />
+                                <img [hidden]="!autorRespo()" alt="Profile Photo" src="assets/img/anime7.png" />
+                                <img [hidden]="!autorAdmin()" alt="Profile Photo" src="assets/img/anime666.png" />
+                            </div>
+                            <b class=" caret d-none d-lg-block d-xl-block"> </b>
+                            <p class=" d-lg-none">Déconnexion</p>
+                        </a>
+                        <ul class=" dropdown-navbar" ngbDropdownMenu>
+                            <li class=" nav-link">
+                                <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                 Profil
               </a>
-                        </li>
-                        <li class=" nav-link">
-                            <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                            </li>
+                            <li class=" nav-link">
+                                <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                 Paramètres
               </a>
-                        </li>
-                        <li class=" dropdown-divider"></li>
-                        <li class=" nav-link">
-                            <a class=" nav-item" (click)="logout()" href="" ngbDropdownItem>
+                            </li>
+                            <li class=" dropdown-divider"></li>
+                            <li class=" nav-link">
+                                <a class=" nav-item" (click)="logout()" href="" ngbDropdownItem>
                 Me déconnecter
               </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" separator d-lg-none"></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" separator d-lg-none"></li>
             </ul>
         </div>
     </div>
@@ -391,9 +380,8 @@
     <div class=" modal-header">
         <input class=" form-control" id="inlineFormInputGroup" placeholder="RECHERCHER" type="text" />
 
-        <button aria-label="Close" class=" close" data-dismiss="modal" type="button" (click)="modal.dismiss('Cross click')">
+        <button aria-label="Close" class=" close" data-dismiss="modal" type="button" (click)="modal.dismiss('Cross click ')">
       <i class=" tim-icons icon-simple-remove"> </i>
     </button>
     </div>
-
 </ng-template>

@@ -1,0 +1,28 @@
+.content {
+    padding: 78px 0px !important;
+    min-height: calc(100vh - 70px);
+}
+
+.first-page {
+    min-height: calc(100vh - 70px) !important;
+    background-size: 100%;
+}
+
+.second-page {
+    padding: 0% 10%;
+    background-size: 100%;
+}
+
+#row-middle {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10vh;
+}
+
+#card-middle {
+    background-color: hsla(0, 0%, 8%, 0.952);
+}
+
+.yellow {
+    color: rgb(255, 217, 0);
+}

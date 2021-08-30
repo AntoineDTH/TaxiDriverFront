@@ -7,7 +7,7 @@ import { FormsModule } from "@angular/forms";
 import { ClientLayoutRoutes } from "./client-layout.routing";
 import { CompteComponent } from "../../pages/compte/compte.component";
 import { HomeComponent } from "../../pages/home/home.component";
-// import { RtlComponent } from "../../pages/rtl/rtl.component";
+import { ReservationsComponent } from "src/app/pages/reservations/reservations.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
@@ -23,7 +23,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
     CompteComponent,
     HomeComponent,
-    // RtlComponent
+    ReservationsComponent
   ]
 })
 export class ClientLayoutModule {}
