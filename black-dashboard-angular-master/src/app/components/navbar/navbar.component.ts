@@ -51,6 +51,18 @@ export class NavbarComponent implements OnInit, OnDestroy {
     return this.appService.autorite==='admin';
   }
 
+  autorChauffeur(){
+    return this.appService.autorite==='chauffeur';
+  }
+
+  autorClient(){
+    return this.appService.autorite==='client';
+  }
+
+  autorRespo(){
+    return this.appService.autorite==='respo';
+  }
+
   // function that adds color white/transparent to the navbar on resize (this is for the collapse)
    updateColor = () => {
    var navbar = document.getElementsByClassName('navbar')[0];

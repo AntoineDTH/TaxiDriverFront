@@ -16,6 +16,7 @@ import { VehiculesComponent } from "../../pages/vehicules/vehicules.component";
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { RtlComponent } from "src/app/pages/rtl/rtl.component";
 
 
 @NgModule({
