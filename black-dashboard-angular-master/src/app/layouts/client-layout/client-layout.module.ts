@@ -10,8 +10,6 @@ import { HomeComponent } from "../../pages/home/home.component";
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { VehiculesComponent } from "src/app/pages/vehicules/vehicules.component";
-
 
 @NgModule({
   imports: [
@@ -25,7 +23,6 @@ import { VehiculesComponent } from "src/app/pages/vehicules/vehicules.component"
 
     CompteComponent,
     HomeComponent,
-    //VehiculesComponent
     // RtlComponent
   ]
 })

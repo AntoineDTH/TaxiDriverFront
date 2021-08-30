@@ -19,7 +19,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="icon-lock"></i></span>
                                         </div>
-                                        <input type="password" class="form-control" [(ngModel)]="credentials.password" name="password" autocomplete="current-password" required>
+                                        <input type="password" class="form-control" [(ngModel)]="credentials.password" name="password" placeholder="Mot de passe" autocomplete="current-password" required>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
@@ -35,9 +35,12 @@
                         <div class="card text-white bg-primary py-5 d-md-down-none" style="width:44%">
                             <div class="card-body text-center">
                                 <div>
-                                    <h2>M'inscrire</h2>
-                                    <p>Félon! Point encore n'es-tu inscrit? Pour moult fonctionnalités débloquer, ici enregistre-toi!</p>
-                                    <button type="button" class="btn btn-primary active mt-3">Créer mon compte</button>
+                                    <h1>M'inscrire</h1>
+                                    <p>Félon ! Point encore n'es-tu inscrit ? </p>
+                                    <p>Pour moult fonctionnalités débloquées, ici enregistre-toi !</p>
+                                    <a href="http://localhost:4200/#/compte">
+                                        <button type="button" class="btn btn-primary active mt-3">Créer mon compte</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
