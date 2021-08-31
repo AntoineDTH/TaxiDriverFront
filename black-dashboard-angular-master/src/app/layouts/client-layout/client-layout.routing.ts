@@ -4,11 +4,13 @@ import { VehiculesComponent } from "../../pages/vehicules/vehicules.component";
 import { CompteComponent } from "../../pages/compte/compte.component";
 import { HomeComponent } from "../../pages/home/home.component";
 import { ReservationsComponent } from "src/app/pages/reservations/reservations.component";
+import { ChauffeursComponent } from "src/app/pages/chauffeurs/chauffeurs.component";
 
 export const ClientLayoutRoutes: Routes = [
  
   { path: "compte", component: CompteComponent },
   { path: "home", component: HomeComponent },
   { path: "vehicules", component:VehiculesComponent},
-  { path: "reservations", component:ReservationsComponent}
+  { path: "reservations", component:ReservationsComponent},
+  { path: "chauffeurs", component:ChauffeursComponent}
 ];

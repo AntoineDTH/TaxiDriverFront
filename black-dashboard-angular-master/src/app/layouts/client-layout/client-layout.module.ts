@@ -8,6 +8,7 @@ import { ClientLayoutRoutes } from "./client-layout.routing";
 import { CompteComponent } from "../../pages/compte/compte.component";
 import { HomeComponent } from "../../pages/home/home.component";
 import { ReservationsComponent } from "src/app/pages/reservations/reservations.component";
+import { ChauffeursComponent } from "src/app/pages/chauffeurs/chauffeurs.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
@@ -23,7 +24,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
     CompteComponent,
     HomeComponent,
-    ReservationsComponent
+    ReservationsComponent,
+    ChauffeursComponent
   ]
 })
 export class ClientLayoutModule {}
