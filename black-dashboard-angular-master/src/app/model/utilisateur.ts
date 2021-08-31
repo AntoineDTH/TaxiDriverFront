@@ -1,3 +1,5 @@
+import { Agence } from "./agence";
+import { Reservation } from "./reservation";
 import { Role } from "./role";
 
 export class Utilisateur {
@@ -10,10 +12,9 @@ export class Utilisateur {
     password?:String;
     roles?:Role[];
     enables?:boolean;
-    /*
     reservations?:Reservation[];
-    agences?;Agence[];
-    feedbacks?:Feedback[];
-    */
+    agences?:Agence[];
+    /*feedbacks?:Feedback[];*/
+    
 
 }
