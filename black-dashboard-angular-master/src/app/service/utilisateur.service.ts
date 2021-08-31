@@ -59,17 +59,38 @@ export class UtilisateurService {
     return this.httpClient.request(req);
   }
 
-  public creerCom(com:any){
+  public creerCom(com:string,client:string,annonce:string){
     const formData: FormData = new FormData();
+    formData.append("client",client);
+    formData.append("annonce",annonce);
+    formData.append("commentaire",com);
     const req =new HttpRequest ("POST",this.urlMetier+"commentaire",formData,{reportProgress:true, responseType:'text'});
     return this.httpClient.request(req);
   }
 
-  public creerReclam(reclam:any){
+  public creerReclam(com:string,client:string,course:string){
     const formData: FormData = new FormData();
+    formData.append("commentaire",com);
+    formData.append("client",client);
+    formData.append("course",course);
     const req =new HttpRequest ("POST",this.urlMetier+"reclamation",formData,{reportProgress:true, responseType:'text'});
     return this.httpClient.request(req);
   }
 
+  public validerCourse(id:number):Observable<any>{
+    return this.httpClient.get(this.urlMetier+"course/"+id);
+  }
+
+  public traiterReclam(id:number):Observable<any>{
+    return this.httpClient.get(this.urlMetier+"reclamation/"+id);
+  }
+
+  public triChauffeur():Observable<any>{
+    return this.httpClient.get(this.urlMetier+"tri_chauffeur");
+  }
+
+  public simulCout(id:number):Observable<any>{
+    return this.httpClient.get(this.urlMetier+"calcul/"+id);
+  }
 
 }
