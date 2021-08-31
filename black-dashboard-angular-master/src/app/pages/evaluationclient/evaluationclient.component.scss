@@ -1,4 +1,23 @@
 .content {
-    padding: 78px 0px !important;
-    min-height: calc(100vh - 70px);
+    padding: 0vh 0px !important;
+    min-height: calc(100vh);
+}
+
+.first-page {
+    padding: 0vh 30vh 0vh;
+    height: 100vh !important;
+    background-size: 110%;
+}
+
+.second-page {
+    padding: 0% 10%;
+    background-size: 100%;
+}
+
+#row-middle {
+    margin-top: 20%;
+}
+
+#card-middle {
+    background-color: hsla(0, 0%, 8%, 0.952);
 }

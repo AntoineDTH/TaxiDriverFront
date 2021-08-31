@@ -1,11 +1,12 @@
 .content {
-    padding: 78px 0px !important;
-    min-height: calc(100vh - 70px);
+    padding: 0px 0px !important;
+    min-height: calc(100vh);
 }
 
 .first-page {
-    min-height: calc(100vh - 70px) !important;
-    background-size: 100%;
+    padding: 0vh 30vh 0vh;
+    height: 100vh !important;
+    background-size: 110%;
 }
 
 .second-page {
@@ -14,12 +15,9 @@
 }
 
 #row-middle {
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 10vh;
+    margin-top: 20%;
 }
 
 #card-middle {
-    margin-top: 10vh;
     background-color: hsla(0, 0%, 8%, 0.952);
 }
