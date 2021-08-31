@@ -7,6 +7,7 @@ import { ReservationsComponent } from "src/app/pages/reservations/reservations.c
 import { ChauffeursComponent } from "src/app/pages/chauffeurs/chauffeurs.component";
 import { FeedbacksComponent } from "src/app/pages/feedbacks/feedbacks.component";
 import { EvaluationclientComponent } from "src/app/pages/evaluationclient/evaluationclient.component";
+import { CommenteroffreComponent } from "src/app/pages/commenteroffre/commenteroffre.component";
 
 export const ClientLayoutRoutes: Routes = [
  
@@ -17,4 +18,5 @@ export const ClientLayoutRoutes: Routes = [
   { path: "chauffeurs", component:ChauffeursComponent},
   { path: "feedbacks", component:FeedbacksComponent},
   { path: "evaluationclient", component:EvaluationclientComponent},
+  { path: "commenteroffre", component:CommenteroffreComponent}
 ];
