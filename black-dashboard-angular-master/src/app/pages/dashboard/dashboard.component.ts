@@ -323,9 +323,9 @@ export class DashboardComponent implements OnInit {
     gradientStroke.addColorStop(0, 'rgba(233,32,16,0)'); //red colors
 
     var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+      labels: ['JUI', 'AOU', 'SEP', 'OCT', 'NOV', 'DEC'],
       datasets: [{
-        label: "Data",
+        label: "Nouveaux clients",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#ec250d',
@@ -339,7 +339,7 @@ export class DashboardComponent implements OnInit {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [80, 100, 70, 80, 120, 80],
+        data: [20, 30, 27, 18, 20, 34],
       }]
     };
 
@@ -392,7 +392,7 @@ export class DashboardComponent implements OnInit {
 
     var chart_labels = ['JAN', 'FEV', 'MAR', 'AVR', 'MAI', 'JUN', 'JUI', 'AOU', 'SEP', 'OCT', 'NOV', 'DEC'];
     this.datasets = [
-      [110000,1200000, 90000, 70000, 95000, 160000, 175060, 160912, 90834, 82130, 71000, 105000],
+      [110000,120000, 90000, 70000, 95000, 160000, 175060, 160912, 90834, 82130, 71000, 105000],
       [80000, 120000, 105000, 110000, 95000, 105000, 90000, 100000, 80000, 95000, 70000, 120000],
       [60000, 80000, 65000, 130000, 80000, 105000, 90000, 130000, 70000, 115000, 60000, 130000]
     ];
