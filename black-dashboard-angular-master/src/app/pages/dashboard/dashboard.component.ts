@@ -361,9 +361,9 @@ export class DashboardComponent implements OnInit {
     gradientStroke.addColorStop(0, 'rgba(66,134,121,0)'); //green colors
 
     var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV'],
+      labels: ['JUI', 'AOU', 'SEP', 'OCT', 'NOV'],
       datasets: [{
-        label: "My First dataset",
+        label: "Chauffeurs répertoriés",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#00d6b4',
@@ -377,7 +377,7 @@ export class DashboardComponent implements OnInit {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [90, 27, 60, 12, 80],
+        data: [310, 270, 295, 312, 301],
       }]
     };
 
@@ -390,11 +390,11 @@ export class DashboardComponent implements OnInit {
 
 
 
-    var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    var chart_labels = ['JAN', 'FEV', 'MAR', 'AVR', 'MAI', 'JUN', 'JUI', 'AOU', 'SEP', 'OCT', 'NOV', 'DEC'];
     this.datasets = [
-      [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
-      [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
-      [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130]
+      [110000,1200000, 90000, 70000, 95000, 160000, 175060, 160912, 90834, 82130, 71000, 105000],
+      [80000, 120000, 105000, 110000, 95000, 105000, 90000, 100000, 80000, 95000, 70000, 120000],
+      [60000, 80000, 65000, 130000, 80000, 105000, 90000, 130000, 70000, 115000, 60000, 130000]
     ];
     this.data = this.datasets[0];
 
@@ -414,7 +414,7 @@ export class DashboardComponent implements OnInit {
       data: {
         labels: chart_labels,
         datasets: [{
-          label: "My First dataset",
+          label: "Kilomètres quotidiens",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: '#ec250d',
@@ -452,9 +452,9 @@ export class DashboardComponent implements OnInit {
         display: false
       },
       data: {
-        labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
+        labels: ['FR', 'ESP', 'ITA', 'UK', 'RO', 'BR'],
         datasets: [{
-          label: "Countries",
+          label: "Bénéfices dans le pays",
           fill: true,
           backgroundColor: gradientStroke,
           hoverBackgroundColor: gradientStroke,
@@ -462,7 +462,7 @@ export class DashboardComponent implements OnInit {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [53000, 20000, 10000, 18000, 1320, 45000],
         }]
       },
       options: gradientBarChartConfiguration
