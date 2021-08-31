@@ -18,6 +18,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { Injectable } from "@angular/core";
 import { AdminComponent } from './admin/admin.component';
 
+
 @Injectable()
 export class XhrInterceptor implements HttpInterceptor{
   intercept (req:HttpRequest<any>,next : HttpHandler){
