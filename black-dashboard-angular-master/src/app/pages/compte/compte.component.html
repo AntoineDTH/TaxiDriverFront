@@ -21,41 +21,41 @@
                         </div>
                     </div>
                     <div class=" col-md-8 ml-auto mr-auto text-center">
-                        <form>
+                        <form (ngSubmit)="save()">
                             <div class=" row">
                                 <div class=" col-md-12 pr-md-1">
                                     <div class=" form-group">
                                         <label> Nom </label>
-                                        <input class=" form-control" placeholder="Nom" type="text" />
+                                        <input class=" form-control" placeholder="Nom" type="text" [(ngModel)]="user.nom" name="nom" />
                                     </div>
                                 </div>
                                 <div class=" col-md-12 pr-md-1">
                                     <div class=" form-group">
                                         <label> Prénom </label>
-                                        <input class=" form-control" placeholder="Prénom" type="text" />
+                                        <input class=" form-control" placeholder="Prénom" type="text" [(ngModel)]="user.prenom" name="prenom" />
                                     </div>
                                 </div>
                                 <div class=" col-md-12 pr-md-1">
                                     <div class=" form-group">
                                         <label> Username </label>
-                                        <input class=" form-control" placeholder="Username" type="text" />
+                                        <input class=" form-control" placeholder="Username" type="text" [(ngModel)]="user.username" name="username" />
                                     </div>
                                 </div>
                                 <div class=" col-md-12 pr-md-1">
                                     <div class=" form-group">
                                         <label> Mail </label>
-                                        <input class=" form-control" placeholder="Mail" type="text" />
+                                        <input class=" form-control" placeholder="Mail" type="text" [(ngModel)]="user.mail" name="mail" />
                                     </div>
                                 </div>
                                 <div class=" col-md-12 pr-md-1">
                                     <div class=" form-group">
                                         <label> Mot de passe </label>
-                                        <input class=" form-control" placeholder="Mot de passe" type="password" />
+                                        <input class=" form-control" placeholder="Mot de passe" type="password" [(ngModel)]="user.password" name="password" />
                                     </div>
                                 </div>
                             </div>
+                            <button class=" btn btn-fill btn-danger" type="submit">Créer mon compte</button>
                         </form>
-                        <button class=" btn btn-fill btn-danger" type="submit">Créer mon compte</button>
                         <br/><br/>
                     </div>
                 </div>
