@@ -11,6 +11,8 @@ import { ReservationsComponent } from "src/app/pages/reservations/reservations.c
 import { ChauffeursComponent } from "src/app/pages/chauffeurs/chauffeurs.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { FeedbacksComponent } from "src/app/pages/feedbacks/feedbacks.component";
+import { EvaluationclientComponent } from "src/app/pages/evaluationclient/evaluationclient.component";
 
 @NgModule({
   imports: [
@@ -25,7 +27,9 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     CompteComponent,
     HomeComponent,
     ReservationsComponent,
-    ChauffeursComponent
+    ChauffeursComponent,
+    FeedbacksComponent,
+    EvaluationclientComponent
   ]
 })
 export class ClientLayoutModule {}
